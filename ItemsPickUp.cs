@@ -13,6 +13,7 @@ public class ItemsPickUp : MonoBehaviour
         //Check for a match with the specific tag on any GameObject that collides with your GameObject
         if (col.gameObject.tag == "Player")
         {
+            //Checks if the player already as an item 
             if (col.transform.childCount < 2) {
                 Tada = GetComponent<AudioSource>();
                 sprite = GetComponent<SpriteRenderer>();
