@@ -13,6 +13,7 @@ public class GiveItem : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
 
+            //Check to see if the Item as a parent
             if (Item.transform.parent != null)
             {
                 Destroy(Item);
