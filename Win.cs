@@ -14,12 +14,13 @@ public class Win : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // allows the user to exit my shit game
         if (Input.GetKey("escape"))
         {
             Application.Quit();
         }
 
-
+        // check to see if they won 
         if (item1 == null && item2 == null && item3 == null)
         {
             win = GetComponent<AudioSource>();
@@ -35,7 +36,7 @@ public class Win : MonoBehaviour
 
         
     }
-
+    // removes user from my game, cause it's shit
     IEnumerator End()
     {
         yield return new WaitForSeconds(5);
